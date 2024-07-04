@@ -87,7 +87,9 @@ function App() {
           </Typography>
         </Toolbar>
         </AppBar>
+        <div className='addTodoDiv'>
         <AddTodo addTodo={addTodo} /> {/* Place AddTodo component to your primary app and give the functionality to it here*/}
+        </div>
         <div className="ag-theme-material" style={{ height: 400, width: 700 }}>
           <AgGridReact
             rowData={todos}

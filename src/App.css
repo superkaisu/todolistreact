@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+.Appbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 1em #00000022;
+}
+
+.addTodoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+}
