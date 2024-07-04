@@ -45,7 +45,6 @@ function App() {
   const fetchItems = () => {
     fetch('https://todolist-fee06-default-rtdb.europe-west1.firebasedatabase.app/items/.json')
       .then(response => response.json())
-      //.then(data => setTodos(Object.values(data)))
       .then(data => addKeys(data))
       .catch(err => console.error(err))
   }
@@ -71,7 +70,7 @@ function App() {
   }
 
   const deleteTodo = (id) => {
-    fetch('https://todolist-fee06-default-rtdb.europe-west1.firebasedatabase.app/items/${id}.json',
+    fetch(`https://todolist-fee06-default-rtdb.europe-west1.firebasedatabase.app/items/${id}.json`, // hox hox, $ toimii vaan `` merkkien sisällä!!
       {
         method: 'DELETE',
       })
